@@ -5,7 +5,7 @@ class ListaProductos extends Component {
     constructor(props) {
         super(props);
     }
-    
+
     render() {
         return (
             <div>
@@ -14,9 +14,7 @@ class ListaProductos extends Component {
                 </h2>
 
                 <ul>
-                    {this.props.productos.map(function (producto){
-                        return  <li key={producto.id}>{producto.nombre}</li>
-                    } )}
+                    {this.props.productos.map(producto =>  <li key={producto.id}>{producto.nombre}</li>)}
                 </ul>
 
             </div>
